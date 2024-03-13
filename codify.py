@@ -73,7 +73,7 @@ class code_generator:
         prompt_template,memory = self.inputs_to_llm(memory_obj)
         
         use_llm = None
-        if llm_type=='mistral':
+        if llm_type =='mistral':
             use_llm = self.mistral_hf
         else:
             use_llm = self.gemini_model
@@ -83,7 +83,7 @@ class code_generator:
         return codegen_chain
     
 
-            #       let's say user ask to change something in code:
+        #       let's say user ask to change something in code:
         # --------- Example 2 ----------
         # user: use meaninful variable name in code
         # you: Certainly! Meaningful variable names enhance code readability. Here's the code with more descriptive variable names:
